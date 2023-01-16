@@ -1,27 +1,29 @@
 /* Font Import */
 @font-face {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Text";
+  font-style: Light;
+  src: url(https://github.com/thelioncape/San-Francisco-family/blob/master/SF%20Pro/SF-Pro-Light.otf)
+    format("otf");
+}
+@font-face {
+  font-family: "SF Pro Text";
   font-style: Regular;
-  src: url(https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts/blob/master/SF-Pro-Display-Regular.otf)
+  src: url(https://github.com/thelioncape/San-Francisco-family/blob/master/SF%20Pro/SF-Pro-Regular.otf)
+    format("otf");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-style: Light;
+  src: url(https://github.com/thelioncape/San-Francisco-family/blob/master/SF%20Mono/Windows%20compatible%20variants/SF-Mono-Light.otf)
     format("otf");
 }
 :root {
-  --font-primary: "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-primary: "SF Pro Text Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-display: "ABC Ginto Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-headline: "ABC Ginto Nord", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-code: "SF Pro Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+  --font-code: "SF Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
     "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono",
     "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-  --font-korean: "SF Pro Display", "Apple SD Gothic Neo", NanumBarunGothic, "\B9D1\C740 \ACE0\B515",
-    "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-japanese: "SF Pro Display", "Hiragino Sans", "\30D2\30E9\30AE\30CE\89D2\30B4 ProN W3",
-    "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka, "MS PGothic", "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
-  --font-chinese-simplified: "SF Pro Display", "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei",
-    "Microsoft JhengHei", 宋体, SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-chinese-traditional: "SF Pro Display", "Microsoft JhengHei", 微軟正黑體,
-    "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体, SimSun, "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
 }
 
 /* Color Stuff */
@@ -30,7 +32,7 @@
   --background-secondary: #000000 !important;
   --background-secondary-alt: #000000 !important;
   --background-tertiary: #000000 !important;
-  --background-message-hover: #383838 !important;
+  --background-message-hover: #161616 !important;
   --background-floating: #161616 !important;
 
   --channeltextarea-background: #000000 !important;
@@ -46,10 +48,11 @@
   --background-mentioned: #463b1c !important;
   --background-mentioned-hover: #1a2a3f !important;
 
-  --header-primary: #ffffff !important;
+  --header-primary: #c9c9c9 !important;
   --header-secondary: #7e7e7e !important;
+  --interactive-active: #b49865 !important;
   --accent-color: #e69d29 !important;
-  --text-normal: #dcddde !important;
+  --text-normal: #b8b8b8 !important;
   --text-muted: #80848c !important;
   --text-link: #e69d29 !important;
   --divider-color: var(--text-link) !important;
@@ -58,8 +61,23 @@
   --mention-wrapper: #383838 !important;
   --mention-wrapper-text: #dddddd !important;
   --mention-wrapper-hover: 150%;
-  --brand-experiment: #e69d29 !important;
+  --mention-foreground: #b8b8b8 !important;
+  --mention-background: #ad761d !important;
+  --brand-experiment: #e69d28 !important;
   --brand-500: #ad761d !important;
+}
+
+/*Modern Indicators Modding */
+/* 
+Now I know what you are thinking, what the fuck is this random ass math bullshit? Apparently this is how you code colour into working with Discords Saturation Accessability thingy.
+Don't expect me to ever add this in again lmao 
+*/
+.theme-dark {
+  --indicator-unread: 0, calc(var(--saturation-factor, 1) * 79%), 53%;
+  --indicator-selected: 37, calc(var(--saturation-factor, 1) * 79%), 53%;
+  --indicator-connected: 139, calc(var(--saturation-factor, 1) * 86%), 65%;
+  --indicator-hovered: hsla(var(--indicator-unread), 0.045);
+  --text-active: white;
 }
 
 /* Channels */
@@ -84,7 +102,10 @@
 
 /* Forum Channel */
 .container-3wLKDe {
-  background-color: var(--background-message-hover) !important;
+  background-color: var(--background-primary) !important;
+}
+.container-1PloNW {
+  background-color: var(--background-floating) !important;
 }
 
 /* User Banners */
