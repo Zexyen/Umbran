@@ -1,216 +1,383 @@
-/* Credit to https://github.com/Overimagine1/old-discord-font */
-
+/* Font Import */
 @font-face {
-  font-family: Whitney;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/46933da896ba96126074286056614542.woff2)
-    format("woff2");
+  font-family: "SF Pro Display";
+  font-style: Regular;
+  src: url(https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts/blob/master/SF-Pro-Display-Regular.otf)
+    format("otf");
 }
-@font-face {
-  font-family: Whitney;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/1651ce6325c0da043476ace0bec3971b.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: Whitney;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/24bda95d153a319704c33329f3ab84bb.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: Whitney;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/7f18f1d5ab6ded7cf71bbc1f907ee3d4.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: Whitney;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/cf4a8a10bbdf9b775fad41e0b9921c84.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: Whitney;
-  font-style: italic;
-  font-weight: 500;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/9cfa747e897c772d25efd8e4a42a005e.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: Whitney;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/f9e7047f6447547781512ec4b977b2ab.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: Whitney;
-  font-style: italic;
-  font-weight: 600;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/21070f52a8a6a61edef9785eaf303fb8.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: Whitney;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/f9c8fcfa7dcc5d6a291a6ebbe3bb847e.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: Whitney;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/5e1649183589023fb24667a369af585d.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Normal;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/ab688947d482808a0b3347f84ebb17a9.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Normal;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/0635f419b122d24f9f60ac4d1066cbc6.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Normal;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/91dcabd038a2e07ea6fbe7ddb625ecfb.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Normal;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/ea053183733605b24806f222b067b1e1.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Normal;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/9491a199bd318f1fc38711fb5067f401.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Normal;
-  font-style: italic;
-  font-weight: 500;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/f0cf30536a7fa447f0c45fdb3b2a6f28.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Normal;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/7d66dfcf8e39f27f163fba8d79577fd8.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Normal;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/9a07cb5ae387a52309b7198543ae5e02.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/5e6f352adb4a6b55ed230f2f91769156.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/30b475dcfa1e8b74d815946e4c18ee09.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/1ace668db419a5014cf75bc116321af3.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/50510b66614a2f395530c61b7c9b6827.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/9e94673570e295b6fb5d4456c4211015.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: italic;
-  font-weight: 500;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/6603a2fb4d2bc997e023972a51938144.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/87c79174865938aedf188b7344fb0428.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/d93311938f51e8608a5d5cb2ea975157.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: normal;
-  font-weight: 800;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/bc5af8e71e27d363e2eeac75c9628922.woff2)
-    format("woff2");
-}
-@font-face {
-  font-family: ABC Ginto Nord;
-  font-style: italic;
-  font-weight: 800;
-  src: url(https://cdn.jsdelivr.net/gh/Overimagine1/old-discord-font/fonts/dc407fd65057fce34a56bf7b6ebb0b9f.woff2)
-    format("woff2");
-}
-
 :root {
-  --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-primary: "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-display: "ABC Ginto Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-headline: "ABC Ginto Nord", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
-    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
-    "Courier New", Courier, monospace;
-  --font-korean: Whitney, "Apple SD Gothic Neo", NanumBarunGothic, "\B9D1\C740 \ACE0\B515",
+  --font-code: "SF Pro Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono",
+    "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  --font-korean: "SF Pro Display", "Apple SD Gothic Neo", NanumBarunGothic, "\B9D1\C740 \ACE0\B515",
     "Malgun Gothic", Gulim, 굴림, Dotum, 돋움, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-japanese: Whitney, "Hiragino Sans", "\30D2\30E9\30AE\30CE\89D2\30B4 ProN W3",
+  --font-japanese: "SF Pro Display", "Hiragino Sans", "\30D2\30E9\30AE\30CE\89D2\30B4 ProN W3",
     "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Osaka, "MS PGothic", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
-  --font-chinese-simplified: Whitney, "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei",
+  --font-chinese-simplified: "SF Pro Display", "Microsoft YaHei New", 微软雅黑, "Microsoft Yahei",
     "Microsoft JhengHei", 宋体, SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-chinese-traditional: Whitney, "Microsoft JhengHei", 微軟正黑體, "Microsoft JhengHei UI",
-    "Microsoft YaHei", 微軟雅黑, 宋体, SimSun, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-chinese-traditional: "SF Pro Display", "Microsoft JhengHei", 微軟正黑體,
+    "Microsoft JhengHei UI", "Microsoft YaHei", 微軟雅黑, 宋体, SimSun, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+
+/* Color Stuff */
+.theme-dark {
+  --background-primary: #000000 !important;
+  --background-secondary: #000000 !important;
+  --background-secondary-alt: #000000 !important;
+  --background-tertiary: #000000 !important;
+  --background-message-hover: #383838 !important;
+  --background-floating: #161616 !important;
+
+  --channeltextarea-background: #000000 !important;
+  --input-background: #0f0f0f !important; /* This is the Icons next to the Profile Modal */
+  --modal-background: var(--background-secondary) !important;
+  --channels-default: #d1d1d1 !important;
+  --focus-primary: #e69d29 !important;
+  --primary-dark-630: var(--background-secondary-alt) !important;
+
+  --background-modifier-selected: #58462b !important;
+  --background-modifier-hover: #302617 !important;
+
+  --background-mentioned: #463b1c !important;
+  --background-mentioned-hover: #1a2a3f !important;
+
+  --header-primary: #ffffff !important;
+  --header-secondary: #7e7e7e !important;
+  --accent-color: #e69d29 !important;
+  --text-normal: #dcddde !important;
+  --text-muted: #80848c !important;
+  --text-link: #e69d29 !important;
+  --divider-color: var(--text-link) !important;
+
+  --mention-brightness: 2.2;
+  --mention-wrapper: #383838 !important;
+  --mention-wrapper-text: #dddddd !important;
+  --mention-wrapper-hover: 150%;
+  --brand-experiment: #e69d29 !important;
+  --brand-500: #ad761d !important;
+}
+
+/* Channels */
+.selected-2TbFuo,
+.modeSelected-3DmyhH {
+  background-color: var(--background-modifier-selected) !important;
+}
+.wrapper-NhbLHG:active {
+  background-color: var(--background-modifier-selected) !important;
+}
+.containerDefault-YUSmu3:hover:not(.selected-2TbFuo) .wrapper-NhbLHG:hover {
+  background-color: var(--background-modifier-hover);
+}
+.containerDefault-YUSmu3 {
+  border-radius: 0px !important;
+  opacity: 1 !important;
+  margin: 0px !important;
+}
+.wrapper-NhbLHG:active > .content-1gYQeQ {
+  background-color: unset;
+}
+
+/* Forum Channel */
+.container-3wLKDe {
+  background-color: var(--background-message-hover) !important;
+}
+
+/* User Banners */
+.popoutBanner-16rVDY {
+  background-color: var(--background-secondary-alt) !important;
+}
+.profileBanner-33-uE1 {
+  background-color: var(--background-secondary-alt) !important;
+}
+.settingsBanner-15-pZk {
+  background-color: var(--background-secondary-alt) !important;
+}
+.userProfileInnerThemedNonPremium-1gT-zY .profileBanner-2zIsK7 {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+/*Mac Topbar Buttons*/
+.winButton-3UMjdg > svg {
+  display: none;
+}
+.winButton-3UMjdg:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.winButton-3UMjdg {
+  pointer-events: none;
+  margin-left: -3px;
+}
+.winButton-3UMjdg::after {
+  content: "";
+  padding: 7px;
+  border-radius: 50px;
+  pointer-events: fill;
+}
+.winButtonClose-3Q8ZH5 {
+  margin-right: 3px;
+}
+.winButtonClose-3Q8ZH5::after {
+  background-color: #ff605c;
+}
+.winButtonClose-3Q8ZH5:hover::after {
+  background-color: rgba(255, 96, 92, 0.5);
+}
+.winButtonMinMax-3RsPUg[aria-label="Maximize"]::after {
+  background-color: #ffbd44;
+}
+.winButtonMinMax-3RsPUg[aria-label="Maximize"]:hover::after {
+  background-color: rgba(255, 189, 68, 0.5);
+}
+.winButtonMinMax-3RsPUg[aria-label="Minimize"]::after {
+  background-color: #00ca4e;
+}
+.winButtonMinMax-3RsPUg[aria-label="Minimize"]:hover::after {
+  background-color: rgba(0, 202, 78, 0.5);
+}
+
+/* Reactions */
+.reaction-3vwAF2,
+.reaction-102jx9 {
+  border: none;
+  border-radius: 0px !important;
+  background-color: var(--background-secondary-alt) !important;
+}
+.reactionMe-1PwQAc,
+.reactionMe-2zhiyZ {
+  background-color: var(--brand-experiment-50a) !important;
+}
+.reaction-3vwAF2 .reactionInner-YJjOtT,
+.reaction-102jx9 .reactionInner-1po5__ {
+  padding: 0 0.375rem;
+}
+.reaction-3vwAF2 .reactionCount-26U4As,
+.reaction-102jx9 .reactionInner-1po5__ {
+  color: var(--text-muted);
+}
+
+/* Search Bar */
+.searchBar-jGtisZ {
+  width: 28px;
+  transition: width 0.3s ease-in-out;
+  border-radius: 0px;
+}
+
+/* Hide Useless Buttons In Input Field */
+.button-f2h6uQ[aria-label="Send a gift"],
+.button-f2h6uQ[aria-label="Open GIF picker"],
+.button-f2h6uQ[aria-label="Open sticker picker"] {
+  display: None;
+}
+
+/* Input Field */
+.form-3gdLxP {
+  background-color: var(--channeltextarea-background) !important;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.form-3gdLxP::before {
+  display: none !important;
+}
+.channelTextArea-1FufC0 > .scrollableContainer-15eg7h,
+.channelTextArea-1FufC0 > .attachedBars-2BCP3l {
+  padding-left: 16px !important;
+  padding-right: 18px !important;
+}
+.buttons-uaqb-5 {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.channelTextArea-1FufC0:hover .buttons-uaqb-5 {
+  opacity: 1;
+}
+.channelTextAreaDisabled-1p2fQv {
+  background-color: var(--channeltextarea-background) !important;
+}
+
+/* Search Modal Thing */
+.searchResultsWrap-5RVOkx {
+  width: 520px !important;
+}
+.searchOption-3u1gRt::after,
+.option-ayUoaq::after {
+  display: none !important;
+}
+
+/* Wider Threads & Pins*/
+.messagesPopoutWrap-3zryHW,
+.container-3XgAHv {
+  width: 40vw !important;
+}
+
+/* User Info Field */
+.container-YkUktl > .avatarWrapper-1B9FTW {
+  height: 20px !important;
+  min-width: 15% !important;
+  padding: 6px 7px 6px 4px !important;
+}
+.avatarWrapper-1B9FTW > .nameTag-sc-gpq {
+  /* Remove Name & Status */
+  display: none !important;
+}
+.container-YkUktl > .directionRow-2Iu2A9 > .button-12Fmur {
+  min-width: 40% !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+  background-color: var(--input-background) !important;
+}
+
+/* No Rounding */
+.buttons-3dF5Kd > .wrapper-2vIMkT,
+.menu-1QACrS,
+.labelContainer-2vJzYL,
+.embedFull-1HGV2S,
+.botTag-7aX5WZ,
+.button-1EGGcP,
+.select-1Ia3hD,
+.component-ifCTxY,
+.contentWrapper-3vHNP2,
+.userPopoutOuter-3AVBmJ,
+.attachedBars-2BCP3l,
+.mainCard-3KBsBI,
+.tag-19iIl1,
+.memberInner--L4X2b,
+.lookFilled-yCfaCM,
+.wrapper-3t3Yqv .controlButton-2PMNom {
+  border-radius: 8px !important;
+}
+
+/* Camera & Mute Buttons In Calls */
+.wrapper-3t3Yqv .staticButton-1oD4l7 {
+  position: relative;
+  border-radius: 8px !important;
+}
+.controlButton-2PMNom .contextMenuNub-NuTZ_U {
+  border-radius: 8px;
+}
+.controlButton-2PMNom .contextMenuNub-NuTZ_U:hover {
+  background-color: var(--primary-dark-700) !important;
+}
+
+/* Topbar Discord Logo */
+.titleBar-1it3bQ > .wordmark-2u86JB {
+  padding-left: 50% !important;
+}
+
+/* Remove Useless Buttons From Top Right */
+.iconWrapper-2awDjA[aria-label="Inbox"],
+.iconWrapper-2awDjA[aria-label="Help"] {
+  display: none !important;
+}
+
+/* Message Mention */
+.messageListItem-ZZ7v6g > .mentioned-Tre-dv::before {
+  background-color: var(--background-mentioned) !important;
+  filter: brightness(var(--mention-brightness)) !important;
+  width: 3px;
+}
+.messageContent-2t3eCI > .wrapper-1ZcZW- {
+  color: var(--mention-wrapper-text) !important;
+  background: var(--mention-wrapper) !important;
+}
+.messageContent-2t3eCI > .wrapper-1ZcZW-:hover {
+  filter: brightness(var(--mention-wrapper-hover));
+}
+
+/* Embed, Codeblock & Image Shadows */
+.imageWrapper-oMkQl4,
+.embedFull-1HGV2S {
+  box-shadow: 7px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+code {
+  box-shadow: 7px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* New Messages & Jump To Present Bar*/
+.newMessagesBar-1hF-9G,
+.jumpToPresentBar-1cEnH0 {
+  border-radius: 0px !important;
+  opacity: 0.8 !important;
+}
+
+/* Random White Backgrounds (fix yo shit discord) */
+.footerSeparator-VzAYwb {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+/* Channel Title Background */
+.title-31SJ6t > .children-3xh0VB {
+  background-color: var(--background-tertiary);
+  padding: 3px 0px 3px 5px !important;
+  margin-right: 8px !important;
+}
+.toolbar-3_r2xA > .iconWrapper-2awDjA {
+  background-color: var(--background-tertiary) !important;
+  padding: 1px 10px 5px 10px !important;
+  margin: 8px !important;
+}
+.toolbar-3_r2xA > .iconWrapper-2awDjA > .iconBadge-3Mmg92 {
+  margin-right: 22% !important;
+}
+
+/* Different Menu Backgrounds */
+.reactors-1VXca7,
+.message-G6O-Wv,
+.pageWrapper-2PwDoS,
+.directoryModal-YJsOMv,
+.chat-2ZfjoI,
+.header-3xB4vB,
+.perksModal-CLcR1c,
+.uploadModal-2ie9O_,
+.modalSize-3WSXDU {
+  background-color: var(--background-primary) !important;
+}
+
+/* Higher Contrast For Forum Channel Post Amount Number */
+.channelInfo-3jN1ay > .text-xs-semibold-3E_l31 {
+  color: var(--channels-default) !important;
+}
+
+/* Server Folders*/
+.expandedFolderBackground-1kSAf6,
+.expandedFolderIconWrapper-3RwQpD {
+  background-color: var(--channeltextarea-background);
+}
+
+/* Unread Pills (Server & Channel) */
+.listItem-3SmSlK > .pill-2RsI5Q > .item-2LIpTv {
+  background-color: var(--accent-color) !important;
+}
+.unreadRelevant-2f-VSK {
+  background-color: var(--accent-color) !important;
+}
+
+/* User Modal */
+.userPopoutInner-1hXSeY .eyebrow-Ejf06y {
+  display: none !important;
+}
+.activity-E0U09Y > .headerContainer-1wJjOa,
+.activity-E0U09Y > .platformIcon-k3yytQ {
+  display: none !important;
+}
+.textarea-_59yqs[aria-label="Note"]:focus {
+  height: 90px !important;
+}
+.lastSection-3_1yKt > .messageInputContainer-2rGDH8 {
+  display: none !important;
+}
+.role-2TIOKu {
+  border: none !important;
+}
+
+/* Remove Invite To Server And Remove Friend Buttons From User Context Menu */
+.labelContainer-2vJzYL[id="user-context-invite-to-server"] {
+  display: None;
+}
+.labelContainer-2vJzYL[id="user-context-remove-friend"] {
+  display: None;
 }

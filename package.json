@@ -1,7 +1,7 @@
 {
-  "name": "theme-template",
+  "name": "Umbran",
   "version": "1.0.0",
-  "description": "A theme template",
+  "description": "Theme designed for OLED Displays",
   "engines": {
     "node": ">=14.0.0"
   },
